@@ -22,7 +22,7 @@ ifeq ($(WINBUILD),true)
 	WINOP := -lws2_32 
 endif
 
-$(EXAMPLE_SRC_DIR)/example: $(EXAMPLE_SRC_DIR)/example.o   $(SERIAL_SRC_DIR)/serialport.o $(UART2UDP_SRC_DIR)/mwi.o
+$(EXAMPLE_SRC_DIR)/example: $(EXAMPLE_SRC_DIR)/example.o   $(SERIAL_SRC_DIR)/serialport.o $(UART2UDP_NEW_SRC_DIR)/mwi.o
 	$(CC) $(EXAMPLE_SRC_CFLAGS) $(LDFLAGS) -o $@ $^ $(WINOP)
 
 

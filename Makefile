@@ -30,6 +30,6 @@ RM		:= rm -f
 all:
 
 EXTRA	:= src/example
-SRCDIRS	:=    src/serial src/mwgc $(EXTRA)
+SRCDIRS	:=    src/serial src/mwgc src/udp $(EXTRA)
 
 include $(SRCDIRS:%=%/Module.mk)
